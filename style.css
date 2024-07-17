@@ -16,7 +16,7 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-
+    justify-content: center;
 }
 
 .feedback-box {
@@ -25,10 +25,25 @@ body {
     border-radius: 10px;
     max-width: 200px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.star-icon {
-    justify-content: right;
+.feedback-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.star-container {
+    background-color: hsl(228, 45%, 44%); 
+    border-radius: 50%; /* Make it a circle */
+    padding: 0.5rem; /* Adjust padding to control circle size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem; /* Space between icon and text */
 }
 
 .bold-text {
